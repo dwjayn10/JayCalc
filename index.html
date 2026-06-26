@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gothic Arithmometer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="calculator-container" role="application" aria-label="Victorian Gothic Calculator">
+        <div class="candle-glow" aria-hidden="true"></div>
+        
+        <div class="calculator-frame">
+            <div class="filigree corner-tl" aria-hidden="true">⚜</div>
+            <div class="filigree corner-tr" aria-hidden="true">⚜</div>
+            <div class="filigree corner-bl" aria-hidden="true">⚜</div>
+            <div class="filigree corner-br" aria-hidden="true">⚜</div>
+            
+            <header class="calculator-header">
+                <h1 class="brand-title">Arithmometer</h1>
+                <div class="brass-divider" aria-hidden="true"></div>
+            </header>
+
+            <section class="display-container" aria-live="polite">
+                <div class="parchment-screen">
+                    <div id="expression-display" class="expression" aria-label="Current expression"></div>
+                    <div id="main-display" class="current-value" aria-label="Result">0</div>
+                </div>
+            </section>
+
+            <section class="keypad" aria-label="Calculator Keypad">
+                <button class="btn btn-utility" data-action="clear" aria-label="Clear All">C</button>
+                <button class="btn btn-utility" data-action="backspace" aria-label="Backspace">⌫</button>
+                <button class="btn btn-operator" data-action="sqrt" aria-label="Square Root">√</button>
+                <button class="btn btn-operator" data-action="operator" data-value="/" aria-label="Divide">÷</button>
+
+                <button class="btn btn-num" data-value="7">7</button>
+                <button class="btn btn-num" data-value="8">8</button>
+                <button class="btn btn-num" data-value="9">9</button>
+                <button class="btn btn-operator" data-action="operator" data-value="*" aria-label="Multiply">×</button>
+
+                <button class="btn btn-num" data-value="4">4</button>
+                <button class="btn btn-num" data-value="5">5</button>
+                <button class="btn btn-num" data-value="6">6</button>
+                <button class="btn btn-operator" data-action="operator" data-value="-">−</button>
+
+                <button class="btn btn-num" data-value="1">1</button>
+                <button class="btn btn-num" data-value="2">2</button>
+                <button class="btn btn-num" data-value="3">3</button>
+                <button class="btn btn-operator" data-action="operator" data-value="+">+</button>
+
+                <button class="btn btn-num" data-value="0">0</button>
+                <button class="btn btn-num" data-value=".">.</button>
+                <button class="btn btn-operator" data-action="percent" aria-label="Percentage">%</button>
+                <button class="btn btn-equals" data-action="calculate" aria-label="Equals">=</button>
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
